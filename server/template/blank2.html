@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+       {% for lead in cards %}
+       <div class="linked-form__field ">
+           <div class="linked-form__field__label">
+               Название сделки
+           </div>
+           <div class="linked-form__field__value">
+               <div class="js-linked-with-actions js-linked-has-actions js-linked-has-value">
+                   <div class="control-wrapper control--suggest">
+                       <div class="linked-form__field__label">
+
+                           <a href={{lead.href}}>{{lead.name}} </a>
+
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       {% endfor %}
+</body>
+</html>
